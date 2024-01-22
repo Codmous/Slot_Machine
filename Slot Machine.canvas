@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"60e81c987dccaef9","type":"text","text":"Check play Amount.","x":60,"y":-240,"width":170,"height":60,"color":"1"},
+		{"id":"eb66192d50aa73ee","type":"text","text":"Spin","x":60,"y":-140,"width":170,"height":60,"color":"1"},
+		{"id":"f4b641a1f832fa0e","type":"text","text":"Check Results","x":60,"y":-40,"width":170,"height":60,"color":"1"},
+		{"id":"bb1425d908e93515","type":"text","text":"Play again","x":60,"y":60,"width":170,"height":60,"color":"1"},
+		{"id":"8f6d3a348c6cd386","type":"text","text":"Initialize","x":-280,"y":-240,"width":140,"height":60,"color":"1"},
+		{"id":"603beb893fe550c6","type":"text","text":"Prompt Deposit","x":-280,"y":-140,"width":140,"height":60,"color":"1"},
+		{"id":"9f321c1d59f40364","type":"text","text":"Check Deposit","x":-280,"y":-40,"width":140,"height":60,"color":"1"},
+		{"id":"0ce067150a735306","type":"text","text":"Convert to Integer","x":-560,"y":-40,"width":200,"height":60,"color":"4"},
+		{"id":"f06b81ff9b84d053","type":"text","text":"Check play lines","x":-290,"y":60,"width":160,"height":60,"color":"1"},
+		{"id":"d8f48df407a81336","x":300,"y":-240,"width":250,"height":60,"color":"4","type":"text","text":"Balance is Deposit\namount <= balance"},
+		{"id":"e5f4dff091f72791","x":300,"y":-140,"width":250,"height":60,"color":"4","type":"text","text":"Print Random"}
+	],
+	"edges":[
+		{"id":"0293a7223d07fdd8","fromNode":"8f6d3a348c6cd386","fromSide":"left","toNode":"603beb893fe550c6","toSide":"left","color":"1"},
+		{"id":"ec9f431199cdb0e0","fromNode":"603beb893fe550c6","fromSide":"right","toNode":"9f321c1d59f40364","toSide":"right","color":"1"},
+		{"id":"02c4b2dd428e7e98","fromNode":"9f321c1d59f40364","fromSide":"left","toNode":"f06b81ff9b84d053","toSide":"left","color":"1"},
+		{"id":"0bb25218e5fc66ba","fromNode":"f06b81ff9b84d053","fromSide":"right","toNode":"60e81c987dccaef9","toSide":"left","color":"1"},
+		{"id":"b22f921f21a9f11b","fromNode":"60e81c987dccaef9","fromSide":"right","toNode":"eb66192d50aa73ee","toSide":"right","color":"1"},
+		{"id":"bc3fd6b1f7d2ae9a","fromNode":"eb66192d50aa73ee","fromSide":"left","toNode":"f4b641a1f832fa0e","toSide":"left","color":"1"},
+		{"id":"5ffffc0409d7dd43","fromNode":"f4b641a1f832fa0e","fromSide":"right","toNode":"bb1425d908e93515","toSide":"right","color":"1"},
+		{"id":"2b416507845a8959","fromNode":"9f321c1d59f40364","fromSide":"top","toNode":"0ce067150a735306","toSide":"top","color":"4"},
+		{"id":"2af7f95aedc329aa","fromNode":"f06b81ff9b84d053","fromSide":"bottom","toNode":"0ce067150a735306","toSide":"bottom","color":"4"},
+		{"id":"a5728cf4cb9333c5","fromNode":"60e81c987dccaef9","fromSide":"top","toNode":"d8f48df407a81336","toSide":"top","color":"4"},
+		{"id":"eaa0932ac68255ad","fromNode":"eb66192d50aa73ee","fromSide":"bottom","toNode":"e5f4dff091f72791","toSide":"left","color":"4"}
+	]
+}

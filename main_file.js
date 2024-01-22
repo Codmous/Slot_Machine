@@ -28,12 +28,12 @@ const noOfLines = () => {
       }
 }
 
-const betAmount = () => {
+const betAmount = (balance) => {
   while (true) {
       const amountBet = prompt("Play Responsibly. Enter bet amount: ");
       const amountBetToNumber = parseFloat(amountBet);
   
-      if (isNaN(amountBetToNumber) || amountBetToNumber <= 0 ||amountBetToNumber > depositAmount) {
+      if (isNaN(amountBetToNumber) || amountBetToNumber <= 0 ||amountBetToNumber > balance) {
         prompt("Invalid play amount. Try again!");
       }
       else{
@@ -42,8 +42,8 @@ const betAmount = () => {
     }
 }
  
-const depositAmount = deposit();
+let balance = deposit();
 const lineNumber = noOfLines();
-const amountBet = betAmount();
+const amountBet = betAmount(balance);
 
 //console.log(depositAmount);

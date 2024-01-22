@@ -1,3 +1,5 @@
+//Collect a deposit from the player.
+
 const prompt = require("prompt-sync")();
 
 const deposit = () => {
@@ -14,6 +16,9 @@ const deposit = () => {
   }
 }
 
+
+//Collect the number of lines to be on.
+
 const noOfLines = () => {
     while (true) {
         const lineNumber = prompt("Play Responsibly. Enter number of lines(1-3): ");
@@ -28,12 +33,15 @@ const noOfLines = () => {
       }
 }
 
-const betAmount = (balance) => {
+
+//Collect bet amount.
+
+const betAmount = (balance, lineNumber) => {
   while (true) {
       const amountBet = prompt("Play Responsibly. Enter bet amount: ");
       const amountBetToNumber = parseFloat(amountBet);
   
-      if (isNaN(amountBetToNumber) || amountBetToNumber <= 0 ||amountBetToNumber > balance) {
+      if (isNaN(amountBetToNumber) || amountBetToNumber <= 0 || amountBetToNumber > (balance/lineNumber)) {
         prompt("Invalid play amount. Try again!");
       }
       else{
@@ -41,9 +49,12 @@ const betAmount = (balance) => {
       }
     }
 }
+
+
+//Spin the slot machine.
+
+
  
 let balance = deposit();
 const lineNumber = noOfLines();
-const amountBet = betAmount(balance);
-
-//console.log(depositAmount);
+const amountBet = betAmount(balance, lineNumber);

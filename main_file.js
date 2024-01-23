@@ -1,3 +1,24 @@
+//Spin the machine variables.
+
+const ROWS = 3;
+const COLS= 3;
+
+
+//Total number of symbols on the reels.
+const SYMBOLS_COUNT = {
+  A : 2,
+  B : 4,
+  C : 6,
+  D : 8
+}
+
+const SYMBOLS_VALUES = {
+  A : 5,
+  B : 4,
+  C : 3,
+  D : 2
+}
+
 //Collect a deposit from the player.
 
 const prompt = require("prompt-sync")();
@@ -52,6 +73,7 @@ const betAmount = (balance, lineNumber) => {
 
 
 //Spin the slot machine.
+
 
 
  

@@ -111,10 +111,28 @@ const transpose = (reels) => {
   return rows;
 }
 
+//Print out the Player's score
+
+const printRows = (rows) => {
+  for (const row of rows){
+    let rowString = "";
+    for (const [i, symbol] of row.entries()){
+      rowString += symbol;
+      if (i != row.length - 1){
+        rowString += " | ";
+      }
+    }
+
+    console.log(rowString);
+
+  }
+}
+
+
+
 let balance = deposit();
 const lineNumber = noOfLines();
 const amountBet = betAmount(balance, lineNumber);
 const reels = spin();
 const rows = transpose(reels);
-console.log(reels);
-console.log(rows);
+printRows(rows);
